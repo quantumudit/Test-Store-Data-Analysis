@@ -1,4 +1,4 @@
-name: run main.py
+name: scrape-and-update-data
 
 on: workflow_dispatch # Manually trigger & run workflow from the UI
 
@@ -28,7 +28,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
+          git diff-index --quiet HEAD || (git commit -a -m "updated data" --allow-empty)
           
       - name: push changes
         uses: ad-m/github-push-action@v0.6.0
