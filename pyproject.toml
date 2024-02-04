@@ -24,6 +24,7 @@ pyarrow = "^15.0.0"
 black = "^24.1.1"
 ipykernel = "^6.29.0"
 kaggle = "^1.6.4"
+pre-commit = "^3.6.0"
 
 [build-system]
 requires = ["poetry-core"]
