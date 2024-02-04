@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "test-store-data-analysis"
+version = "0.1.0"
+description = "The project is about scraping data from a website and perform basic analysis"
+authors = ["Udit Kumar Chatterjee <quantumudit@gmail.com>"]
+license = "NC-SA"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+httpx = "^0.26.0"
+selectolax = "^0.3.19"
+fake-useragent = "^1.4.0"
+python-box = "^7.1.1"
+pyyaml = "^6.0.1"
+numpy = "^1.26.3"
+pandas = "^2.2.0"
+matplotlib = "^3.8.2"
+seaborn = "^0.13.2"
+pyarrow = "^15.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.1"
+ipykernel = "^6.29.0"
+kaggle = "^1.6.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,11 @@
+web_scraping:
+  root_url: https://gopher1.extrkt.com/
+  timeout: 100
+  clear_data: True
+  links_data_path: data/external/products_link.csv
+  scraped_data_path: data/external/scraped_products.csv
+
+data_preprocessing:
+  scraped_data_path: data/external/scraped_products.csv
+  processed_data_path: data/processed/products.csv
+
