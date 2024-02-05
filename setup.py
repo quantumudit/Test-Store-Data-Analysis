@@ -13,8 +13,9 @@ REPO_NAME = "Test-Store-Data-Analysis"
 SRC_REPO = "src"
 AUTHOR_NAME = "Udit Kumar Chatterjee"
 AUTHOR_EMAIL = "quantumudit@gmail.com"
-AUTHOR_GITHUB_USERNAME = "quantumudit"
+AUTHOR_GH_USERNAME = "quantumudit"
 SHORT_DESCRIPTION = "A small python package for web scraping"
+GH_URL = "https://github.com/"
 
 with open("README.md", "r", encoding="utf-8") as readme:
     LONG_DESCRIPTION = readme.read()
@@ -46,10 +47,9 @@ setup(
     description=SHORT_DESCRIPTION,
     long_description=LONG_DESCRIPTION,
     long_description_content="text/markdown",
-    url=f"https://github.com/{AUTHOR_GITHUB_USERNAME}/{REPO_NAME}",
+    url=f"{GH_URL}/{AUTHOR_GH_USERNAME}/{REPO_NAME}",
     project_urls={
-        "Bug Tracker": f"https://github.com/{AUTHOR_GITHUB_USERNAME}\
-                        /{REPO_NAME}/issues"
+        "Bug Tracker": f"{GH_URL}/{AUTHOR_GH_USERNAME}/{REPO_NAME}/issues"
     },
     package_dir={"": "src"},
     packages=find_packages(where="src"),
